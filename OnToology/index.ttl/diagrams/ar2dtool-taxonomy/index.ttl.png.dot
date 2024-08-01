@@ -1,5 +1,31 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
+node [shape = rectangle, color="black"]; "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea" "foo@en:Squamata" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum" "foo@en:Mammalia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora" "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" "foo@en:Animalia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" "foo@en:Order" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae" "foo@en:Carnivora" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata" "foo@en:Kingdom" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Reptilia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia" "foo@en:Family" "foo@en:Class" "foo@en:Proboscidea" "foo@en:Chordata" ; /*classes style*/
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Species" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" [ label = "rdfs:subClassOf" ];
+	"foo@en:Chordata" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" [ label = "rdfs:subClassOf" ];
+	"foo@en:Squamata" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" [ label = "rdfs:subClassOf" ];
+	"foo@en:Elephantidae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" -> "http://purl.org/ontology/wo/TaxonRank" [ label = "rdfs:subClassOf" ];
+	"foo@en:Proboscidea" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" [ label = "rdfs:subClassOf" ];
+	"foo@en:Reptilia" -> "foo@en:Class" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" [ label = "rdfs:subClassOf" ];
+	"foo@en:Viverridae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" [ label = "rdfs:subClassOf" ];
+	"foo@en:Animalia" -> "foo@en:Kingdom" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" [ label = "rdfs:subClassOf" ];
+	"foo@en:Carnivora" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
+	"foo@en:Mammalia" -> "foo@en:Class" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" [ label = "rdfs:subClassOf" ];
 
 }
