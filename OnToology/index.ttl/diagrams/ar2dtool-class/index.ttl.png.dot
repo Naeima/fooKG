@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:ObservableProperty" "foo@en:Observation" "foo@en:Sensor" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea" "foo@en:Squamata" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum" "foo@en:Mammalia" "foo@en:FeatureOfInterest" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora" "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" "foo@en:Genus" "foo@en:Animalia" "foo@en:ObservableProperty" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" "foo@en:Order" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" "foo@en:Phylum" "foo@en:TaxonRank" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae" "foo@en:Carnivora" "foo@en:Sensor" "foo@en:Kingdom" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Species" "foo@en:Reptilia" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia" "foo@en:Family" "foo@en:Class" "foo@en:Observation" "foo@en:Proboscidea" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
 	"foo@en:lianas2255" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#590SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#590SAT32" -> "https://w3id.org/def/foo#590SAT32" [ label = "foo@en:madeBySensor" ];
@@ -15,7 +15,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#813SAT32" -> "https://w3id.org/def/foo#813SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#813SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation841" -> "foo@en:lianas841" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Count" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation3012" -> "foo@en:lianas3012" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1171" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas920" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -94,7 +93,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas1081" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2798" -> "foo@en:lianas2798" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2712" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:Horizon" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianas1479" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas57" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#546SAT32" -> "https://w3id.org/def/foo#546SAT32" [ label = "foo@en:madeBySensor" ];
@@ -229,6 +227,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#498SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#498SAT32" -> "https://w3id.org/def/foo#498SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3708" -> "foo@en:lianas3708" [ label = "foo@en:madeBySensor" ];
+	"foo@en:TreeObservation" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:TreeObservation" -> "foo@en:Lianas" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas507" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1476" -> "foo@en:lianas1476" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3225" -> "foo@en:lianas3225" [ label = "foo@en:madeBySensor" ];
@@ -347,6 +347,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation874" -> "foo@en:lianas874" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#86SAT32" -> "https://w3id.org/def/foo#86SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#86SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Species" -> "http://www.bbc.co.uk/nature/species" [ label = "rdfs:seeAlso" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Species" -> "http://en.wikipedia.org/wiki/Species" [ label = "rdfs:seeAlso" ];
 	"foo@en:lianas2209" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#835SAT32" -> "https://w3id.org/def/foo#835SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#835SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -369,7 +371,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3024" -> "foo@en:lianas3024" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1183" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2906" -> "foo@en:lianas2906" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Speed" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation2423" -> "foo@en:lianas2423" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2331" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#398SAT32" -> "https://w3id.org/def/foo#398SAT32" [ label = "foo@en:madeBySensor" ];
@@ -517,6 +518,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas2151" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#896SAT32" -> "https://w3id.org/def/foo#896SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#896SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Phylum" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation3385" -> "foo@en:lianas3385" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#188SAT32" -> "https://w3id.org/def/foo#188SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#188SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -671,7 +673,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas2868" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2000" -> "foo@en:lianas2000" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1158" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:Clay" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation3625" -> "foo@en:lianas3625" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#198SAT32" -> "https://w3id.org/def/foo#198SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#198SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -692,6 +693,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3121" -> "foo@en:lianas3121" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#743SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#743SAT32" -> "https://w3id.org/def/foo#743SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:Species" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation239" -> "foo@en:lianas239" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1678" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation865" -> "foo@en:lianas865" [ label = "foo@en:madeBySensor" ];
@@ -855,7 +857,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas1456" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas34" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3205" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:SoilPH" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianas722" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation160" -> "foo@en:lianas160" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3440" -> "foo@en:lianas3440" [ label = "foo@en:madeBySensor" ];
@@ -878,6 +879,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#702SAT32" -> "https://w3id.org/def/foo#702SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#702SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1414" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Genus" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#155SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#155SAT32" -> "https://w3id.org/def/foo#155SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2648" -> "foo@en:lianas2648" [ label = "foo@en:madeBySensor" ];
@@ -1034,12 +1036,14 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#602SAT32" -> "https://w3id.org/def/foo#602SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3503" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1363" -> "foo@en:lianas1363" [ label = "foo@en:madeBySensor" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" -> "http://en.wikipedia.org/wiki/Taxonomic_rank" [ label = "rdfs:seeAlso" ];
 	"foo@en:lianas3020" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#874SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#874SAT32" -> "https://w3id.org/def/foo#874SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2511" -> "foo@en:lianas2511" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1669" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation856" -> "foo@en:lianas856" [ label = "foo@en:madeBySensor" ];
+	"foo@en:Class" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation3027" -> "foo@en:lianas3027" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#601SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#601SAT32" -> "https://w3id.org/def/foo#601SAT32" [ label = "foo@en:madeBySensor" ];
@@ -1089,8 +1093,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation872" -> "foo@en:lianas872" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#609SAT32" -> "https://w3id.org/def/foo#609SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#609SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"https://w3id.org/def/foo#113SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#113SAT32" -> "https://w3id.org/def/foo#113SAT32" [ label = "foo@en:madeBySensor" ];
+	"https://w3id.org/def/foo#113SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3349" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas866" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#385SAT32" -> "https://w3id.org/def/foo#385SAT32" [ label = "foo@en:madeBySensor" ];
@@ -1157,6 +1161,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas3344" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2117" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas861" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Animalia" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#554SAT32" -> "https://w3id.org/def/foo#554SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#554SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2260" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -1271,12 +1276,21 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation37" -> "foo@en:lianas37" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation1534" -> "foo@en:lianas1534" [ label = "foo@en:madeBySensor" ];
 	"foo@en:" -> "https://ontoology.linkeddata.es/" [ label = "dcterms:publisher" ];
+	"foo@en:" -> "d7c27bbcee02a0f9535aca66064d2ed4" [ label = ":creator" ];
 	"foo@en:" -> "sosa:" [ label = "owl:imports" ];
 	"foo@en:" -> "foo@en:V2.0" [ label = "owl:versionIRI" ];
+	"foo@en:" -> "https://doi.org/10.1007/978-3-031-43458-7_29" [ label = "dcterms:doi" ];
+	"foo@en:" -> "005e475f7b9777b9f71af501b05958c5" [ label = ":contributor" ];
 	"foo@en:" -> "https://github.com/Naeima" [ label = ":wasAttributedTo" ];
+	"foo@en:" -> "eeeeb5d6c79b4d106d4e70ae9f135d4f" [ label = ":contributor" ];
+	"foo@en:" -> "c24c6d7718cc9fb4d53059d5c6e7dd66" [ label = ":contributor" ];
+	"foo@en:" -> "5070f3730a53cb83b280f88112838e89" [ label = ":contributor" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = ":license" ];
+	"foo@en:" -> "https://naeima.github.io/foo_html/index.ttl" [ label = "rdfs:seeAlso" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "dcterms:license" ];
+	"foo@en:" -> "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true" [ label = "foaf:logo" ];
 	"foo@en:" -> "https://ontology.forest-observatory.org" [ label = ":wasDerivedFrom" ];
+	"foo@en:" -> "https://naeima.github.io/foo_html/" [ label = "rdfs:seeAlso" ];
 	"https://w3id.org/def/foo#123SAT32" -> "https://w3id.org/def/foo#123SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#123SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3185" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -1292,7 +1306,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation544" -> "foo@en:lianas544" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#122SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#122SAT32" -> "https://w3id.org/def/foo#122SAT32" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Temperature" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation3739" -> "foo@en:lianas3739" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#31SAT32" -> "https://w3id.org/def/foo#31SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#31SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -1516,7 +1529,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas815" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation7" -> "foo@en:lianas7" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3533" -> "foo@en:lianas3533" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Direction" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianas3441" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#464SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#464SAT32" -> "https://w3id.org/def/foo#464SAT32" [ label = "foo@en:madeBySensor" ];
@@ -1593,6 +1605,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#308SAT32" -> "https://w3id.org/def/foo#308SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#308SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2182" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Proboscidea" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea" [ label = "owl:sameAs" ];
 	"foo@en:lianas698" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1581" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas221" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -1748,7 +1761,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3704" -> "foo@en:lianas3704" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#532SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#532SAT32" -> "https://w3id.org/def/foo#532SAT32" [ label = "foo@en:madeBySensor" ];
-	"foo@en:LandUse" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianas1778" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#208SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#208SAT32" -> "https://w3id.org/def/foo#208SAT32" [ label = "foo@en:madeBySensor" ];
@@ -1793,12 +1805,16 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#752SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#752SAT32" -> "https://w3id.org/def/foo#752SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas996" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" -> "http://www.bbc.co.uk/nature/order" [ label = "rdfs:seeAlso" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" -> "http://en.wikipedia.org/wiki/Order_%28biology%29" [ label = "rdfs:seeAlso" ];
 	"foo@en:lianas2878" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#428SAT32" -> "https://w3id.org/def/foo#428SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#428SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1168" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:SBS6" -> "foo@en:SBS6" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas917" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom" -> "http://www.bbc.co.uk/nature/kingdom" [ label = "rdfs:seeAlso" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom" -> "http://en.wikipedia.org/wiki/Kingdom_%28biology%29" [ label = "rdfs:seeAlso" ];
 	"foo@en:MB18" -> "foo@en:MB18" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#863SAT32" -> "https://w3id.org/def/foo#863SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#863SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -1871,16 +1887,19 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation1860" -> "foo@en:lianas1860" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#484SAT32" -> "https://w3id.org/def/foo#484SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#484SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Reptilia" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#707SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#707SAT32" -> "https://w3id.org/def/foo#707SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation1149" -> "foo@en:lianas1149" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation244" -> "foo@en:lianas244" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#211SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#211SAT32" -> "https://w3id.org/def/foo#211SAT32" [ label = "foo@en:madeBySensor" ];
-	"foo@en:lianasObservation870" -> "foo@en:lianas870" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3432" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:lianasObservation870" -> "foo@en:lianas870" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#69SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#69SAT32" -> "https://w3id.org/def/foo#69SAT32" [ label = "foo@en:madeBySensor" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum" -> "http://www.bbc.co.uk/nature/phylum" [ label = "rdfs:seeAlso" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum" -> "http://en.wikipedia.org/wiki/Phylum" [ label = "rdfs:seeAlso" ];
 	"https://w3id.org/def/foo#595SAT32" -> "https://w3id.org/def/foo#595SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#595SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3041" -> "foo@en:lianas3041" [ label = "foo@en:madeBySensor" ];
@@ -1910,12 +1929,12 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:GPSObservation" -> "foo@en:Umas2" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Bikang1" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Tunglap" [ label = "foo@en:madeBySensor" ];
-	"foo@en:GPSObservation" -> "foo@en:Kaish" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Putut" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Seri" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Merotai" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Binbingan" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Jasper" [ label = "foo@en:madeBySensor" ];
+	"foo@en:GPSObservation" -> "foo@en:Kasih" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Tulid" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Kuma" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:Maliau" [ label = "foo@en:madeBySensor" ];
@@ -1942,6 +1961,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#320SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1107" -> "foo@en:lianas1107" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2242" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Viverridae" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation2960" -> "foo@en:lianas2960" [ label = "foo@en:madeBySensor" ];
 	"foo@en:SoilSensor" -> "foo@en:SoilObservation" [ label = "foo@en:observes" ];
 	"foo@en:SoilSensor" -> "foo@en:Soil" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -2053,8 +2073,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#163SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#163SAT32" -> "https://w3id.org/def/foo#163SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3188" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:Observation" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"foo@en:Observation" -> "sosa:Observation" [ label = "owl:sameAs" ];
+	"foo@en:Observation" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"foo@en:lianasObservation1680" -> "foo@en:lianas1680" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#72SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#72SAT32" -> "https://w3id.org/def/foo#72SAT32" [ label = "foo@en:madeBySensor" ];
@@ -2092,7 +2112,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#607SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#607SAT32" -> "https://w3id.org/def/foo#607SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation1489" -> "foo@en:lianas1489" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Silt" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#111SAT32" -> "https://w3id.org/def/foo#111SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#111SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3864" -> "foo@en:lianas3864" [ label = "foo@en:madeBySensor" ];
@@ -2106,7 +2125,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#718SAT32" -> "https://w3id.org/def/foo#718SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#718SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2780" -> "foo@en:lianas2780" [ label = "foo@en:madeBySensor" ];
-	"foo@en:TotalC" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianas3210" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#110SAT32" -> "https://w3id.org/def/foo#110SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#110SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -2127,8 +2145,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#828SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#828SAT32" -> "https://w3id.org/def/foo#828SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2048" -> "foo@en:lianas2048" [ label = "foo@en:madeBySensor" ];
-	"https://w3id.org/def/foo#332SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#332SAT32" -> "https://w3id.org/def/foo#332SAT32" [ label = "foo@en:madeBySensor" ];
+	"https://w3id.org/def/foo#332SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2674" -> "foo@en:lianas2674" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#220SAT32" -> "https://w3id.org/def/foo#220SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#220SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -2216,13 +2234,13 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"sosa:observedProperty" -> "sosa:ObservableProperty" [ label = "schema:rangeIncludes" ];
 	"sosa:observedProperty" -> "sosa:Observation" [ label = "schema:domainIncludes" ];
 	"foo@en:lianas510" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:FeatureOfInterest" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"foo@en:FeatureOfInterest" -> "sosa:FeatureOfInterest" [ label = "owl:sameAs" ];
+	"foo@en:FeatureOfInterest" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"https://w3id.org/def/foo#559SAT32" -> "https://w3id.org/def/foo#559SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#559SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1159" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"https://w3id.org/def/foo#610SAT32" -> "https://w3id.org/def/foo#610SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#610SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
+	"https://w3id.org/def/foo#610SAT32" -> "https://w3id.org/def/foo#610SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation1394" -> "foo@en:lianas1394" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#882SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#882SAT32" -> "https://w3id.org/def/foo#882SAT32" [ label = "foo@en:madeBySensor" ];
@@ -2366,12 +2384,12 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas1547" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#562SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#562SAT32" -> "https://w3id.org/def/foo#562SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:Elephantidae" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation251" -> "foo@en:lianas251" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation5" -> "foo@en:lianas5" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#238SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#238SAT32" -> "https://w3id.org/def/foo#238SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3531" -> "foo@en:lianas3531" [ label = "foo@en:madeBySensor" ];
-	"foo@en:ID" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation2304" -> "foo@en:lianas2304" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2212" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2930" -> "foo@en:lianas2930" [ label = "foo@en:madeBySensor" ];
@@ -2398,7 +2416,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation230" -> "foo@en:lianas230" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3895" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3510" -> "foo@en:lianas3510" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Cov" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianas19" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#348SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#348SAT32" -> "https://w3id.org/def/foo#348SAT32" [ label = "foo@en:madeBySensor" ];
@@ -2496,6 +2513,16 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas192" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#627SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#627SAT32" -> "https://w3id.org/def/foo#627SAT32" [ label = "foo@en:madeBySensor" ];
+	"NULL" -> "https://orcid.org/0000-0002-0190-3346" [ label = "so:identifier" ];
+	"NULL" -> "https://profiles.cardiff.ac.uk/staff/goossensbr" [ label = "foaf:homepage" ];
+	"NULL" -> "https://orcid.org/0000-0003-3597-2646" [ label = "so:identifier" ];
+	"NULL" -> "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa" [ label = "foaf:homepage" ];
+	"NULL" -> "https://profiles.cardiff.ac.uk/staff/ranaof" [ label = "foaf:homepage" ];
+	"NULL" -> "https://profiles.cardiff.ac.uk/staff/pererac" [ label = "foaf:homepage" ];
+	"NULL" -> "https://orcid.org/0000-0002-2998-5056" [ label = "so:identifier" ];
+	"NULL" -> "https://orcid.org/0000-0003-2360-4643" [ label = "so:identifier" ];
+	"NULL" -> "https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima" [ label = "foaf:homepage" ];
+	"NULL" -> "https://orcid.org/0000-0002-7951-4148" [ label = "so:identifier" ];
 	"https://w3id.org/def/foo#131SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#131SAT32" -> "https://w3id.org/def/foo#131SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2621" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -2540,6 +2567,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas3174" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3892" -> "foo@en:lianas3892" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1829" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:TaxonRank" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#351SAT32" -> "https://w3id.org/def/foo#351SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#351SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2182" -> "foo@en:lianas2182" [ label = "foo@en:madeBySensor" ];
@@ -2555,8 +2583,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3728" -> "foo@en:lianas3728" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#462SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#462SAT32" -> "https://w3id.org/def/foo#462SAT32" [ label = "foo@en:madeBySensor" ];
-	"foo@en:ObservableProperty" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"foo@en:ObservableProperty" -> "sosa:ObservableProperty" [ label = "owl:sameAs" ];
+	"foo@en:ObservableProperty" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"foo@en:lianas2409" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation591" -> "foo@en:lianas591" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#138SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -2613,7 +2641,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#520SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#792SAT32" -> "https://w3id.org/def/foo#792SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#792SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:Subplot" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation3240" -> "foo@en:lianas3240" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2398" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1889" -> "foo@en:lianas1889" [ label = "foo@en:madeBySensor" ];
@@ -2659,6 +2686,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#851SAT32" -> "https://w3id.org/def/foo#851SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#851SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2903" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Carnivora" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation857" -> "foo@en:lianas857" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#527SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#527SAT32" -> "https://w3id.org/def/foo#527SAT32" [ label = "foo@en:madeBySensor" ];
@@ -2695,6 +2723,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation815" -> "foo@en:lianas815" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#140SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#140SAT32" -> "https://w3id.org/def/foo#140SAT32" [ label = "foo@en:madeBySensor" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus" -> "http://www.bbc.co.uk/nature/genus" [ label = "rdfs:seeAlso" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus" -> "http://en.wikipedia.org/wiki/Genus" [ label = "rdfs:seeAlso" ];
 	"foo@en:lianas411" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#859SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#859SAT32" -> "https://w3id.org/def/foo#859SAT32" [ label = "foo@en:madeBySensor" ];
@@ -2705,10 +2735,9 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#251SAT32" -> "https://w3id.org/def/foo#251SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#251SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1686" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:GMTDate" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#858SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#858SAT32" -> "https://w3id.org/def/foo#858SAT32" [ label = "foo@en:madeBySensor" ];
-	"foo@en:PlotName" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
+	"foo@en:Mammalia" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#362SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#362SAT32" -> "https://w3id.org/def/foo#362SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas867" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -2767,7 +2796,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#420SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation157" -> "foo@en:lianas157" [ label = "foo@en:madeBySensor" ];
 	"sosa:" -> "http://www.opengeospatial.org/ogc/Software" [ label = "dcterms:license" ];
-	"sosa:" -> "ab92a65942a1ef153e81845f07683cc0" [ label = "dcterms:creator" ];
+	"sosa:" -> "985ad589d59f3f49ec2f4b8e89e13096" [ label = "dcterms:creator" ];
 	"sosa:" -> "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" [ label = "dcterms:license" ];
 	"foo@en:lianas719" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1688" -> "foo@en:lianas1688" [ label = "foo@en:madeBySensor" ];
@@ -2841,7 +2870,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3432" -> "foo@en:lianas3432" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3340" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2199" -> "foo@en:lianas2199" [ label = "foo@en:madeBySensor" ];
-	"foo@en:lianas" -> "foo@en:TreeObservation" [ label = "foo@en:observes" ];
 	"https://w3id.org/def/foo#861SAT32" -> "https://w3id.org/def/foo#861SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#861SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1604" -> "foo@en:lianas1604" [ label = "foo@en:madeBySensor" ];
@@ -2865,6 +2893,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#647SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#647SAT32" -> "https://w3id.org/def/foo#647SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2242" -> "foo@en:lianas2242" [ label = "foo@en:madeBySensor" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" -> "http://www.bbc.co.uk/nature/class" [ label = "rdfs:seeAlso" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Class" -> "http://en.wikipedia.org/wiki/Class_%28biology%29" [ label = "rdfs:seeAlso" ];
 	"foo@en:lianas2150" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#151SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#151SAT32" -> "https://w3id.org/def/foo#151SAT32" [ label = "foo@en:madeBySensor" ];
@@ -2930,7 +2960,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3321" -> "foo@en:lianas3321" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1480" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2088" -> "foo@en:lianas2088" [ label = "foo@en:madeBySensor" ];
-	"foo@en:GMTTime" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation2720" -> "foo@en:lianas2720" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#67SAT32" -> "https://w3id.org/def/foo#67SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#67SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -2988,6 +3017,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:DV16" -> "foo@en:DV16" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#217SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#217SAT32" -> "https://w3id.org/def/foo#217SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:Squamata" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation1986" -> "foo@en:lianas1986" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#489SAT32" -> "https://w3id.org/def/foo#489SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#489SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3082,6 +3112,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3056" -> "foo@en:lianas3056" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#879SAT32" -> "https://w3id.org/def/foo#879SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#879SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Order" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Order" [ label = "owl:sameAs" ];
 	"foo@en:lianas481" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#271SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#271SAT32" -> "https://w3id.org/def/foo#271SAT32" [ label = "foo@en:madeBySensor" ];
@@ -3157,7 +3188,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#825SAT32" -> "https://w3id.org/def/foo#825SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1693" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2215" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:Image" -> "http://api.stardog.com/w3id.org/def/foo#" [ label = "rdfs:definedBy" ];
+	"foo@en:Image" -> "foo@en:" [ label = "rdfs:definedBy" ];
 	"https://w3id.org/def/foo#117SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#117SAT32" -> "https://w3id.org/def/foo#117SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation169" -> "foo@en:lianas169" [ label = "foo@en:madeBySensor" ];
@@ -3219,8 +3250,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:Kasih" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#660SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#660SAT32" -> "https://w3id.org/def/foo#660SAT32" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Sensor" -> "sosa:Sensor" [ label = "rdfs:definedBy" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "owl:sameAs" ];
+	"foo@en:Sensor" -> "sosa:Sensor" [ label = "rdfs:definedBy" ];
 	"https://w3id.org/def/foo#448SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#448SAT32" -> "https://w3id.org/def/foo#448SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#336SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3228,6 +3259,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation1154" -> "foo@en:lianas1154" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas179" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1062" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Kingdom" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#771SAT32" -> "https://w3id.org/def/foo#771SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#771SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3" -> "foo@en:lianas3" [ label = "foo@en:madeBySensor" ];
@@ -3249,8 +3281,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#558SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1524" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas158" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:lianasObservation" -> "foo@en:lianas" [ label = "foo@en:madeBySensor" ];
-	"foo@en:lianasObservation" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3893" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2666" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#881SAT32" -> "https://w3id.org/def/foo#881SAT32" [ label = "foo@en:madeBySensor" ];
@@ -3299,7 +3329,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#282SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#505SAT32" -> "https://w3id.org/def/foo#505SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#505SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:Distance" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#889SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#889SAT32" -> "https://w3id.org/def/foo#889SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation1547" -> "foo@en:lianas1547" [ label = "foo@en:madeBySensor" ];
@@ -3307,11 +3336,11 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas3204" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#281SAT32" -> "https://w3id.org/def/foo#281SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#281SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"https://w3id.org/def/foo#616SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#616SAT32" -> "https://w3id.org/def/foo#616SAT32" [ label = "foo@en:madeBySensor" ];
-	"foo@en:lianasObservation2212" -> "foo@en:lianas2212" [ label = "foo@en:madeBySensor" ];
+	"https://w3id.org/def/foo#616SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#504SAT32" -> "https://w3id.org/def/foo#504SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#504SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:lianasObservation2212" -> "foo@en:lianas2212" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3119" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3837" -> "foo@en:lianas3837" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#888SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3321,16 +3350,16 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation2127" -> "foo@en:lianas2127" [ label = "foo@en:madeBySensor" ];
 	"foo@en:observes" -> "sosa:observes" [ label = "owl:sameAs" ];
 	"foo@en:lianas2035" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:lianasObservation2753" -> "foo@en:lianas2753" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation29" -> "foo@en:lianas29" [ label = "foo@en:madeBySensor" ];
+	"foo@en:lianasObservation2753" -> "foo@en:lianas2753" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#615SAT32" -> "https://w3id.org/def/foo#615SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#615SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1526" -> "foo@en:lianas1526" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2661" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:LocalDate" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
-	"foo@en:lianasObservation2270" -> "foo@en:lianas2270" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3269" -> "foo@en:lianas3269" [ label = "foo@en:madeBySensor" ];
+	"foo@en:lianasObservation2270" -> "foo@en:lianas2270" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3177" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Family" -> "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" [ label = "owl:sameAs" ];
 	"foo@en:lianasObservation3895" -> "foo@en:lianas3895" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#89SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#89SAT32" -> "https://w3id.org/def/foo#89SAT32" [ label = "foo@en:madeBySensor" ];
@@ -3345,14 +3374,14 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas615" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas132" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3241" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:lianas2014" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#88SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#88SAT32" -> "https://w3id.org/def/foo#88SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:lianas2014" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1505" -> "foo@en:lianas1505" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3248" -> "foo@en:lianas3248" [ label = "foo@en:madeBySensor" ];
-	"foo@en:lianasObservation1022" -> "foo@en:lianas1022" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#725SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#725SAT32" -> "https://w3id.org/def/foo#725SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:lianasObservation1022" -> "foo@en:lianas1022" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#178SAT32" -> "https://w3id.org/def/foo#178SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#178SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2647" -> "foo@en:lianas2647" [ label = "foo@en:madeBySensor" ];
@@ -3386,9 +3415,9 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation3206" -> "foo@en:lianas3206" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1365" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:madeBySensor" -> "sosa:madeBySensor" [ label = "owl:sameAs" ];
-	"foo@en:DV28" -> "foo@en:DV28" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#126SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#126SAT32" -> "https://w3id.org/def/foo#126SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:DV28" -> "foo@en:DV28" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2599" -> "foo@en:lianas2599" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation1998" -> "foo@en:lianas1998" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas3029" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3435,8 +3464,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation40" -> "foo@en:lianas40" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2536" -> "foo@en:lianas2536" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2053" -> "foo@en:lianas2053" [ label = "foo@en:madeBySensor" ];
-	"https://w3id.org/def/foo#7SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#7SAT32" -> "https://w3id.org/def/foo#7SAT32" [ label = "foo@en:madeBySensor" ];
+	"https://w3id.org/def/foo#7SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#780SAT32" -> "https://w3id.org/def/foo#780SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#780SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation1452" -> "foo@en:lianas1452" [ label = "foo@en:madeBySensor" ];
@@ -3557,7 +3586,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation1803" -> "foo@en:lianas1803" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#350SAT32" -> "https://w3id.org/def/foo#350SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#350SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:LocalTime" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:lianas3454" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"sosa:isSampleOf" -> "sosa:FeatureOfInterest" [ label = "schema:rangeIncludes" ];
 	"sosa:isSampleOf" -> "sosa:Sample" [ label = "schema:domainIncludes" ];
@@ -3599,7 +3627,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation2903" -> "foo@en:lianas2903" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1180" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2179" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:HDOP" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#570SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#570SAT32" -> "https://w3id.org/def/foo#570SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas1578" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3622,7 +3649,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation1166" -> "foo@en:lianas1166" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#680SAT32" -> "https://w3id.org/def/foo#680SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#680SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:TotalN" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#468SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#468SAT32" -> "https://w3id.org/def/foo#468SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2314" -> "foo@en:lianas2314" [ label = "foo@en:madeBySensor" ];
@@ -3681,15 +3707,16 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#799SAT32" -> "https://w3id.org/def/foo#799SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas754" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3863" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:Lianas" -> "http://api.stardog.com/w3id.org/def/foo#" [ label = "rdfs:definedBy" ];
+	"foo@en:Lianas" -> "foo@en:TreeObservation" [ label = "foo@en:observes" ];
+	"foo@en:Lianas" -> "foo@en:" [ label = "rdfs:definedBy" ];
 	"foo@en:lianas2636" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2245" -> "foo@en:lianas2245" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2153" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#191SAT32" -> "https://w3id.org/def/foo#191SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#191SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:lianas3778" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#526SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#526SAT32" -> "https://w3id.org/def/foo#526SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:lianas3778" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#414SAT32" -> "https://w3id.org/def/foo#414SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#414SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas2068" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3698,10 +3725,10 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianasObservation2786" -> "foo@en:lianas2786" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas45" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3216" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:lianasObservation171" -> "foo@en:lianas171" [ label = "foo@en:madeBySensor" ];
-	"foo@en:lianasObservation2707" -> "foo@en:lianas2707" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#525SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#525SAT32" -> "https://w3id.org/def/foo#525SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:lianasObservation2707" -> "foo@en:lianas2707" [ label = "foo@en:madeBySensor" ];
+	"foo@en:lianasObservation171" -> "foo@en:lianas171" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2132" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas1531" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3366" -> "foo@en:lianas3366" [ label = "foo@en:madeBySensor" ];
@@ -3768,8 +3795,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#470SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation3759" -> "foo@en:lianas3759" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation2049" -> "foo@en:lianas2049" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Nasalislarvatus" -> "https://doi.org/10.1016/S0006-3207(99)00066-X" [ label = "rdfs:definedBy" ];
 	"foo@en:Nasalislarvatus" -> "https://doi/10.1126/sciadv.aaq0250" [ label = "rdfs:definedBy" ];
+	"foo@en:Nasalislarvatus" -> "https://doi.org/10.1016/S0006-3207(99)00066-X" [ label = "rdfs:definedBy" ];
 	"foo@en:lianasObservation1050" -> "foo@en:lianas1050" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#146SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#146SAT32" -> "https://w3id.org/def/foo#146SAT32" [ label = "foo@en:madeBySensor" ];
@@ -3779,9 +3806,9 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#55SAT32" -> "https://w3id.org/def/foo#55SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#55SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas3099" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:DV19" -> "foo@en:DV19" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#804SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#804SAT32" -> "https://w3id.org/def/foo#804SAT32" [ label = "foo@en:madeBySensor" ];
+	"foo@en:DV19" -> "foo@en:DV19" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#257SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#257SAT32" -> "https://w3id.org/def/foo#257SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3340" -> "foo@en:lianas3340" [ label = "foo@en:madeBySensor" ];
@@ -3827,8 +3854,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"https://w3id.org/def/foo#204SAT32" -> "https://w3id.org/def/foo#204SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2918" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation474" -> "foo@en:lianas474" [ label = "foo@en:madeBySensor" ];
-	"foo@en:SE3" -> "foo@en:SE3" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation31" -> "foo@en:lianas31" [ label = "foo@en:madeBySensor" ];
+	"foo@en:SE3" -> "foo@en:SE3" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation3754" -> "foo@en:lianas3754" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#588SAT32" -> "https://w3id.org/def/foo#588SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#588SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3851,6 +3878,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas1892" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#314SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#314SAT32" -> "https://w3id.org/def/foo#314SAT32" [ label = "foo@en:madeBySensor" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" -> "http://www.bbc.co.uk/nature/family" [ label = "rdfs:seeAlso" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Family" -> "http://en.wikipedia.org/wiki/Family_%28biology%29" [ label = "rdfs:seeAlso" ];
 	"https://w3id.org/def/foo#698SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#698SAT32" -> "https://w3id.org/def/foo#698SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianasObservation994" -> "foo@en:lianas994" [ label = "foo@en:madeBySensor" ];
@@ -3910,7 +3939,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas357" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianas983" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation2957" -> "foo@en:lianas2957" [ label = "foo@en:madeBySensor" ];
-	"foo@en:Site" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"https://w3id.org/def/foo#866SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#866SAT32" -> "https://w3id.org/def/foo#866SAT32" [ label = "foo@en:madeBySensor" ];
 	"foo@en:lianas2865" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -3937,9 +3965,9 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:lianas877" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#66SAT32" -> "https://w3id.org/def/foo#66SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#66SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:lianas1760" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"https://w3id.org/def/foo#480SAT32" -> "https://w3id.org/def/foo#480SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#480SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:lianas1760" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:lianasObservation719" -> "foo@en:lianas719" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#268SAT32" -> "https://w3id.org/def/foo#268SAT32" [ label = "foo@en:madeBySensor" ];
 	"https://w3id.org/def/foo#268SAT32" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
