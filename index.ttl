@@ -67,44 +67,44 @@ _:anon-genid-f498c0b728d54856a592b554ea5ab386-4 <http://xmlns.com/foaf/0.1/name>
 <https://w3id.org/def/foo#Animalia> a owl:Class ;
    rdfs:label "Animalia"@en-gb ;
    rdfs:subClassOf owl:Thing ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en .
 <https://w3id.org/def/foo#Chordata> a owl:Class ;
    rdfs:label "Chordata"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Animalia> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> ;
    <http://www.w3.org/2004/02/skos/core#definition> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
 <https://w3id.org/def/foo#Mammalia> a owl:Class ;
    rdfs:label "Mammalia"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Chordata> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> ;
    <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
 <https://w3id.org/def/foo#Reptilia> a owl:Class ;
    rdfs:label "Reptilia"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Chordata> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
 <https://w3id.org/def/foo#Proboscidea> a owl:Class ;
    rdfs:label "Proboscidea"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Mammalia> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
 <https://w3id.org/def/foo#Carnivora> a owl:Class ;
    rdfs:label "Carnivora"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Mammalia> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
 <https://w3id.org/def/foo#Squamata> a owl:Class ;
    rdfs:label "Squamata"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Reptilia> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> .
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> .
 <https://w3id.org/def/foo#Primates> a owl:Class ;
    rdfs:label "Primates"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Mammalia> .
 <https://w3id.org/def/foo#Elephantidae> a owl:Class ;
    rdfs:label "Elephantidae"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Proboscidea> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> ;
    <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
 <https://w3id.org/def/foo#Cercopithecidae> a owl:Class ;
    rdfs:label "Cercopithecidae"@en-gb ;
@@ -122,14 +122,14 @@ _:anon-genid-f498c0b728d54856a592b554ea5ab386-4 <http://xmlns.com/foaf/0.1/name>
 <https://w3id.org/def/foo#Viverridae> a owl:Class ;
    rdfs:label "Viverridae"@en-gb ;
    rdfs:subClassOf <https://w3id.org/def/foo#Family> ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae> .
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae> .
 <https://w3id.org/def/foo#Species> a owl:Class ;
    rdfs:label "Species"@en-gb ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> ;
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
 <https://w3id.org/def/foo#Genus> a owl:Class ;
    rdfs:label "Genus"@en-gb ;
-   owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> .
+   owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> .
 <https://w3id.org/def/foo#ElephasMaximus> a owl:Class ;
    rdfs:label "Asian Elephant"@en , "Elephas maximus"@la ;
    rdfs:subClassOf <https://w3id.org/def/foo#Elephantidae> ;
@@ -155,29 +155,29 @@ _:anon-genid-f498c0b728d54856a592b554ea5ab386-4 <http://xmlns.com/foaf/0.1/name>
    rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> .
 <https://w3id.org/def/foo#Observation> a owl:Class ;
    rdfs:label "Observation"@en ;
-   owl:sameAs <http://www.w3.org/ns/sosa/Observation> ;
+   owl:equivalentClass <http://www.w3.org/ns/sosa/Observation> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en ;
    rdfs:definedBy <https://w3id.org/def/foo> .
 <https://w3id.org/def/foo#Sensor> a owl:Class ;
    rdfs:label "Sensor"@en ;
-   owl:sameAs <http://www.w3.org/ns/sosa/Sensor> ;
+   owl:equivalentClass <http://www.w3.org/ns/sosa/Sensor> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en ;
    rdfs:definedBy <http://www.w3.org/ns/sosa/Sensor> .
 <https://w3id.org/def/foo#ObservableProperty> a owl:Class ;
    rdfs:label "Observable Property"@en ;
-   owl:sameAs <http://www.w3.org/ns/sosa/ObservableProperty> ;
+   owl:equivalentClass <http://www.w3.org/ns/sosa/ObservableProperty> ;
    <http://www.w3.org/2004/02/skos/core#definition> "An observable quality (property, characteristic) of a FeatureOfInterest."@en ;
    rdfs:definedBy <https://w3id.org/def/foo> .
 <https://w3id.org/def/foo#FeatureOfInterest> a owl:Class ;
    rdfs:label "Feature Of Interest"@en ;
-   owl:sameAs <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
+   owl:equivalentClass <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
    <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
    rdfs:comment "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
    <http://www.w3.org/2004/02/skos/core#example> "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en ;
    rdfs:isDefinedBy <http://www.w3.org/ns/sosa/> .
 <https://w3id.org/def/foo#hasFeatureOfInterest> a owl:ObjectProperty ;
    rdfs:label "has Feature Of Interest"@en ;
-   owl:sameAs <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
+   owl:equivalentProperty <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
    rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
    rdfs:domain <https://w3id.org/def/foo#Observation> ;
    rdfs:range <https://w3id.org/def/foo#NasalisLarvatus> , <https://w3id.org/def/foo#ElephasMaximus> , <https://w3id.org/def/foo#MalayopythonReticulatus> , <https://w3id.org/def/foo#ManisJavanica> , <https://w3id.org/def/foo#FeatureOfInterest> , <https://w3id.org/def/foo#Soil> , <https://w3id.org/def/foo#Tree> , <https://w3id.org/def/foo#Image> ;
@@ -198,7 +198,7 @@ _:anon-genid-f498c0b728d54856a592b554ea5ab386-4 <http://xmlns.com/foaf/0.1/name>
    owl:inverseOf <http://www.w3.org/ns/sosa/hasFeatureOfInterest> .
 <https://w3id.org/def/foo#madeBySensor> a owl:ObjectProperty ;
    rdfs:label "made by sensor"@en ;
-   owl:sameAs <http://www.w3.org/ns/sosa/madeBySensor> ;
+   owl:equivalentProperty <http://www.w3.org/ns/sosa/madeBySensor> ;
    rdfs:comment "Relation between an Observation and the Sensor which made the Observation."@en ;
    rdfs:domain <https://w3id.org/def/foo#Observation> ;
    rdfs:range <https://w3id.org/def/foo#Sensor> ;
@@ -322,7 +322,7 @@ _:anon-genid-f498c0b728d54856a592b554ea5ab386-4 <http://xmlns.com/foaf/0.1/name>
    rdfs:range xsd:string .
 <https://w3id.org/def/foo#latitude> a owl:DatatypeProperty ;
    rdfs:label "Latitude" ;
-   owl:sameAs <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
+   owl:equivalentProperty <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Latitudinal coordinate of the elephant." ;
    rdfs:domain <https://w3id.org/def/foo#gPSObservation> ;
    rdfs:range xsd:double .
@@ -338,7 +338,7 @@ _:anon-genid-f498c0b728d54856a592b554ea5ab386-4 <http://xmlns.com/foaf/0.1/name>
    rdfs:range xsd:time .
 <https://w3id.org/def/foo#longitude> a owl:DatatypeProperty ;
    rdfs:label "Longitude" ;
-   owl:sameAs <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
+   owl:equivalentProperty <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
    <http://www.w3.org/2004/02/skos/core#definition> "Longitudinal coordinate of the elephant." ;
    rdfs:domain <https://w3id.org/def/foo#gPSObservation> ;
    rdfs:range xsd:double .
